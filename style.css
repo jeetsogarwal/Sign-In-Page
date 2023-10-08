@@ -1,0 +1,151 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("r.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper {
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 80px 100px;
+  border: 0px solid rgba(255, 255, 255, 0.2);
+  border-color: rgba(0, 0, 0, 0.525);
+  /* background: url("q.jpeg"); */
+  background: transparent;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2 2 10px rgba(0 0 0 0.8);
+}
+.wrapper h1 {
+  font-size: 40px;
+  margin-left: -10px;
+  color: rgb(0, 0, 0);
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.wrapper .input-box {
+  width: 100%;
+  height: 30px;
+  margin: 30px 0;
+  margin-left: -10px;
+  background-color: transparent;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  background-color: rgba(255, 255, 255, 0.693);
+}
+.remember-forget {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.remember-forget a {
+  color: rgb(0, 0, 0);
+  margin-left: 60px;
+  text-decoration: none;
+}
+.remember-forget a:hover {
+  color: rgb(0, 42, 255);
+}
+.register-link {
+  margin-left: 125px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.register-link a {
+  color: rgb(0, 0, 0);
+}
+.register-link a:hover {
+  color: rgb(0, 42, 255);
+}
+
+.bn54 {
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 130px;
+  opacity: 1;
+  background-color: rgb(131, 200, 246);
+  margin-left: 100px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bn54:hover {
+  background-color: rgba(255, 255, 255, 0.795);
+}
+
+.bn54 .bn54span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+.bn54:hover {
+  animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.bn54:hover .bn54span {
+  animation: bn54storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+@keyframes bn54rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+  25% {
+    transform: rotate(3deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-3deg) translate3d(0, 0, 0);
+  }
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bn54storm {
+  0% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+  25% {
+    transform: translate3d(4px, 0, 0) translateZ(0);
+  }
+  50% {
+    transform: translate3d(-3px, 0, 0) translateZ(0);
+  }
+  75% {
+    transform: translate3d(2px, 0, 0) translateZ(0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) translateZ(0);
+  }
+}
